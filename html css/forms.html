@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="forms.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3131841332.js"></script>
+</head>
+<body>
+    
+<hr>
+<h1><u style="color: blue;">Registration Form</u></h1>
+
+<form action="index.html" style="background-color: rgb(250, 137, 93); padding-right:20px;"  method="post">
+    <label for="name"> <b>Name: </b></label>
+    <input type="text" id="name" name="name" placeholder="Enter your Name">
+    <br>
+    <br>
+    <label for="email"><b>Email: </b></label>
+    <input type="email" id="email" name="email" placeholder="Enter your Email">
+    <br>
+    <br>
+    <label for="password"><b>Password: </b></label>
+    <input type="password" id="password" name="password" placeholder="Enter your password">
+    <br>
+    <br>
+    <label for="gender"><b>Gender:</label>
+    <input type="radio" id="gender" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="gender" name="gender" value="female">
+    <label for="female ">Female</label>
+    <input type="radio" id="gender" name="gender" value="other">
+    <label for="other">Transgender</label>
+    <br>
+    <br>
+    <label for="hobbies">Hobbies:</label>
+    <input type="checkbox" id ="hobbies" name="hobbies" value="reading">
+    <label for="reading">Reading</label>
+    <input type="checkbox" id="hobbies" name="hobbies" value="playing">
+    <label for="playing">Playing</label> 
+    <br>
+    <br>
+    <div>
+        <label for="bdate">Birth Date</label>
+        <input type="date" id="bdate" name="bdate">
+        </div>
+        <br>
+    
+    <a class="btn btn-primary" href="index.html" role="button">Submit</a>
+    <a class="btn btn-danger" href="index.html" role="button">Reset</a>
+    <br>
+    <i style="padding:15px; color:blue;" class="fa fa-address-card" aria-hidden="true"></i>
+    <i style="padding:15px; color:blue;" class="fas fa-home"></i>
+    <i style="padding:15px; color:blue;" class="fab fa-twitter"></i>
+    <i style="padding:15px; color:red;"  class="fab fa-youtube" ></i>
+<hr>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <script>
+        function getcube() {
+            var number = parseFloat(document.getElementById('inputNumber').value);
+            if (!isNaN(number)) {
+                alert(number * number * number);
+            } else {
+                alert("Please enter a valid number.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="number" id="inputNumber" placeholder="Enter a number" />
+        <input type="button" value="Click" onclick="getcube()" />
+    </form>
+</body>
+</html>

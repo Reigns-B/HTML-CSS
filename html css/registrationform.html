@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: grey;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(122, 12, 12, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: blue;
+            color:white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    
+    <form action="#" method="post">
+        <label for="firstName">Enter First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        <br>
+        <label for="lastName">Enter Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        <br>
+        <label for="email">Enter your Email address:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="phoneNumber">Enter Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+        <br>
+        <label for="password">Enter Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <br>
+        <button type="submit">Sign Up</button>
+    </form>
+
+</body>
+</html>
+</body>
+</html>

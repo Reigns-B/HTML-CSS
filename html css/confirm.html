@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Dialog box</title>
+    <script type="text/javascript">
+        function testConfirmationDialog() {
+        var result =confirm("Do you want to continue?");
+        if (result){
+            Alert("Ok Next page");
+        }
+        else{
+            Alert("Thank you,GoodBye");
+        }
+        }
+    </script>
+</head>
+<body>
+    <h2>Confirmation Box</h2>
+    <button onclick="testConfirmationDialog()">Click me</button> 
+</body>
+</html>
+ 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRADING SYSTEM</title>
+    <script>
+        function calculateGrade() {
+            const scoreInput = document.getElementById("score").value;
+            const score = parseInt(scoreInput);
+
+            if (isNaN(score)) {
+                alert("Please enter a valid number.");
+                return;
+            }
+            let grade;
+            switch (true) {
+                case score >= 90:
+                    grade = 'A';
+                    break;
+                case score >= 85:
+                    grade = 'A-';
+                    break;
+                case score >= 80:
+                    grade = 'B+';
+                    break;
+                case score >= 75:
+                    grade = 'B';
+                    break;
+                case score >= 70:
+                    grade = 'B-';
+                    break;
+                case score >= 65:
+                    grade = 'C+';
+                    break;
+                case score >= 55:
+                    grade = 'C';
+                    break;
+                case score >= 45:
+                    grade = 'C-';
+                    break;
+                case score >= 35:
+                    grade = 'D+';
+                    break;
+                default:
+                    grade = 'F';
+            }
+
+            alert(`Your grade is: ${grade}`);
+        }
+    </script>
+</head>
+<body>
+    <h1>Grade Calculator</h1>
+    <label for="score">Enter your score:</label>
+    <input type="number" id="score" min="0" max="100">
+    <button onclick="calculateGrade()">Calculate Grade</button>
+</body>
+</html>
